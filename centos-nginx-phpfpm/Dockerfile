@@ -36,21 +36,6 @@ ENV NGINX_OPT {\
 }]\
 }
 
-ENV PHPFPM_OPT {\
-"php_fpm_pools":[{\
-  "name" : "default",\
-  "user" : "nginx",\
-  "group" : "nginx",\
-  "listen" : "9000",\
-  "pm" : "dynamic",\
-  "pm.max_children" : "5",\
-  "pm.start_servers" : "2",\
-  "pm.min_spare_servers" : "1",\
-  "pm.max_spare_servers" : "3",\
-  "chdir" : "/"\
-}]\
-}
-
 RUN echo "bash -c \"cd /var/playbooks && ansible-playbook phpfpm.yml -e 'skip_install=true' -e '\$(sed \"s/~~/,/g\" <<< \$PHPFPM_OPT)'\"" >> /usr/bin/container-config.sh
 
 CMD ["/bin/bash", "/usr/bin/container-boot.sh"]

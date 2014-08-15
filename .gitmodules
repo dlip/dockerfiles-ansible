@@ -4,3 +4,9 @@
 [submodule "centos-nginx-phpfpm/playbooks/roles/phpfpm"]
 	path = centos-nginx-phpfpm/playbooks/roles/phpfpm
 	url = https://github.com/dlip/ansible-role-phpfpm.git
+[submodule "centos-mysql/playbooks/roles/mysql"]
+	path = centos-mysql/playbooks/roles/mysql
+	url = https://github.com/dlip/ansible-role-mysql.git
+[submodule "centos-nginx-phpfpm-wordpress/playbooks/roles/wordpress"]
+	path = centos-nginx-phpfpm-wordpress/playbooks/roles/wordpress
+	url = https://github.com/dlip/ansible-role-wordpress.git
