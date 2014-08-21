@@ -10,3 +10,9 @@
 [submodule "centos-nginx-phpfpm-wordpress/playbooks/roles/wordpress"]
 	path = centos-nginx-phpfpm-wordpress/playbooks/roles/wordpress
 	url = https://github.com/dlip/ansible-role-wordpress.git
+[submodule "centos-build-ruby/playbooks/roles/ruby"]
+	path = centos-build-ruby/playbooks/roles/ruby
+	url = https://github.com/dlip/ansible-role-ruby.git
+[submodule "centos-build/playbooks/roles/build-essential"]
+	path = centos-build/playbooks/roles/build-essential
+	url = https://github.com/dlip/ansible-role-build-essential.git

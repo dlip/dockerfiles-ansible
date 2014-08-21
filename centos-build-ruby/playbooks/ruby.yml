@@ -1,0 +1,6 @@
+- hosts: localhost
+  sudo: True
+  gather_facts: yes
+  connection: local
+  roles:
+    - { role: ruby }
