@@ -3,5 +3,4 @@
   gather_facts: yes
   connection: local
   roles:
-    - { role: remi }
-    - { role: phpfpm }
+    - { role: rails }

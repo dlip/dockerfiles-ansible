@@ -28,3 +28,9 @@
 [submodule "centos-build-ruby-nodejs/playbooks/roles/epel"]
 	path = centos-build-ruby-nodejs/playbooks/roles/epel
 	url = https://github.com/dlip/ansible-role-epel.git
+[submodule "centos-nginx-phpfpm/playbooks/roles/remi"]
+	path = centos-nginx-phpfpm/playbooks/roles/remi
+	url = https://github.com/dlip/ansible-role-remi.git
+[submodule "centos-build-ruby-nodejs-rails/playbooks/roles/rails"]
+	path = centos-build-ruby-nodejs-rails/playbooks/roles/rails
+	url = https://github.com/dlip/ansible-role-rails.git

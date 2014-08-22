@@ -1,6 +1,7 @@
 FROM       dlip/centos-nginx
 MAINTAINER Dane Lipscombe <dane@lipscombe.com.au>
 
+ADD playbooks/roles/remi /var/playbooks/roles/remi
 ADD playbooks/phpfpm.yml /var/playbooks/phpfpm.yml
 ADD playbooks/roles/phpfpm /var/playbooks/roles/phpfpm
 
