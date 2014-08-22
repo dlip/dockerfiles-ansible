@@ -22,3 +22,9 @@
 [submodule "centos-nodejs/playbooks/roles/epel"]
 	path = centos-nodejs/playbooks/roles/epel
 	url = https://github.com/dlip/ansible-role-epel.git
+[submodule "centos-build-ruby-nodejs/playbooks/roles/nodejs"]
+	path = centos-build-ruby-nodejs/playbooks/roles/nodejs
+	url = https://github.com/dlip/ansible-role-nodejs.git
+[submodule "centos-build-ruby-nodejs/playbooks/roles/epel"]
+	path = centos-build-ruby-nodejs/playbooks/roles/epel
+	url = https://github.com/dlip/ansible-role-epel.git
