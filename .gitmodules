@@ -16,3 +16,9 @@
 [submodule "centos-build/playbooks/roles/build-essential"]
 	path = centos-build/playbooks/roles/build-essential
 	url = https://github.com/dlip/ansible-role-build-essential.git
+[submodule "centos-nodejs/playbooks/roles/nodejs"]
+	path = centos-nodejs/playbooks/roles/nodejs
+	url = https://github.com/dlip/ansible-role-nodejs.git
+[submodule "centos-nodejs/playbooks/roles/epel"]
+	path = centos-nodejs/playbooks/roles/epel
+	url = https://github.com/dlip/ansible-role-epel.git
