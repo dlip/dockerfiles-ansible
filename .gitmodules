@@ -34,3 +34,12 @@
 [submodule "centos-build-ruby-nodejs-rails/playbooks/roles/rails"]
 	path = centos-build-ruby-nodejs-rails/playbooks/roles/rails
 	url = https://github.com/dlip/ansible-role-rails.git
+[submodule "centos-php-apache/playbooks/roles/apache"]
+	path = centos-php-apache/playbooks/roles/apache
+	url = https://github.com/dlip/ansible-role-apache.git
+[submodule "centos-php/playbooks/roles/php"]
+	path = centos-php/playbooks/roles/php
+	url = https://github.com/dlip/ansible-role-php.git
+[submodule "centos-php/playbooks/roles/remi"]
+	path = centos-php/playbooks/roles/remi
+	url = https://github.com/dlip/ansible-role-remi.git
