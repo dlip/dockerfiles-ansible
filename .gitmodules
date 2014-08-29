@@ -43,3 +43,6 @@
 [submodule "centos-php/playbooks/roles/remi"]
 	path = centos-php/playbooks/roles/remi
 	url = https://github.com/dlip/ansible-role-remi.git
+[submodule "centos-postgresql/playbooks/roles/postgresql"]
+	path = centos-postgresql/playbooks/roles/postgresql
+	url = https://github.com/dlip/ansible-role-postgresql.git

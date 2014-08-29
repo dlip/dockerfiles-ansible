@@ -3,7 +3,7 @@ MAINTAINER Dane Lipscombe <dane@lipscombe.com.au> v6.5 updated 2014.08.14
 
 RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
  
-RUN yum -y update && yum -y install ansible tar git && yum clean all
+RUN yum -y update && yum -y install ansible sudo tar && yum clean all
 
 ADD hosts /etc/ansible/hosts
 ADD scripts/ /usr/bin

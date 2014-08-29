@@ -1,0 +1,20 @@
+postgresql:
+  image: dlip/centos-postgresql
+  volumes:
+    - .:/share
+  ports:
+    - "5432:5432"
+  environment:
+    POSTGRESQL_OPT: '{ 
+    "postgresql_users": [
+        {"name" : "test", "pass": "test1234", "flags": "LOGIN,SUPERUSER"}
+      ],
+    "postgresql_databases": [
+        {"name" : "test", "owner": "test", "template": "template0", "encoding": "UTF8", "collate": "en_US.UTF-8", "ctype": "en_US.UTF-8"}
+      ],
+    "postgresql_pg_hba_custom": [
+        {"type" : "host", "database": "test", "role": "test", "address": "0.0.0.0/0", "method": "md5", "comment": "" }
+      ]
+    }'
+
+    #{"name" : "test", "owner": "test", "template": "template0", "encoding": "UTF8", "collate": "en_US.UTF-8", "ctype": "en_US.UTF-8", "import_data": "/share/test.backup" }
