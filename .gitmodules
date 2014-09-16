@@ -46,3 +46,6 @@
 [submodule "centos-postgresql/playbooks/roles/postgresql"]
 	path = centos-postgresql/playbooks/roles/postgresql
 	url = https://github.com/dlip/ansible-role-postgresql.git
+[submodule "centos-java/playbooks/roles/java"]
+	path = centos-java/playbooks/roles/java
+	url = https://github.com/dlip/ansible-role-java.git

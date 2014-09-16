@@ -1,0 +1,9 @@
+- hosts: localhost
+  sudo: True
+  gather_facts: yes
+  connection: local
+  vars:
+    java_packages:
+      - java-1.6.0-openjdk
+  roles:
+    - { role: java }
