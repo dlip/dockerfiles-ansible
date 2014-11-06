@@ -1,0 +1,6 @@
+mysql:
+  image: dlip/centos-mysql
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+  ports:
+    - "3399:3306"

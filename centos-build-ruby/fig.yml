@@ -1,0 +1,4 @@
+ruby:
+  image: dlip/centos-build-ruby
+  volumes:
+    - .:/share

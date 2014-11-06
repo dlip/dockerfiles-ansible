@@ -1,0 +1,8 @@
+---
+postgresql_users:
+ - { name: "johndoe", pass: "test1234", flags: "LOGIN,SUPERUSER" }
+postgresql_databases:
+ - { name: "db1", owner: "postgres", template: "template0", encoding: "{{ postgresql_encoding }}", collate: "{{ postgresql_locale }}", ctype: "{{ postgresql_locale }}" }
+ #- { name: "db1", owner: "postgres", template: "template0", encoding: "{{ postgresql_encoding }}", collate: "{{ postgresql_locale }}", ctype: "{{ postgresql_locale "import_data": "/share/test.backup"}}" }
+postgresql_pg_hba_custom:
+ - { type: host, database: db1, role: "johndoe", address: "0.0.0.0/0", method: "{{ postgresql_default_ipv4_auth_method }}", comment: '' }

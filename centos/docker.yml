@@ -3,4 +3,3 @@
   gather_facts: yes
   connection: local
   roles:
-    - { role: build-essential }

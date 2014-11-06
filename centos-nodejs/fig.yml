@@ -1,0 +1,4 @@
+nodejs:
+  image: dlip/centos-nodejs
+  volumes:
+    - .:/share

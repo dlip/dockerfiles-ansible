@@ -1,0 +1,4 @@
+php:
+  image: dlip/centos-php
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-#bash -c "minga /etc/minga/openldap /etc/minga/openldap /etc/openldap '$OPENLDAP_DEFAULT_OPT' '$OPENLDAP_OPT'"
+cd /var/playbooks && ansible-playbook docker.yml -e 'skip_install=true'

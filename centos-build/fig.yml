@@ -1,0 +1,4 @@
+build:
+  image: dlip/centos-build
+  volumes:
+    - .:/share

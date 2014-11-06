@@ -1,0 +1,7 @@
+apache:
+  image: dlip/centos-php-apache
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - ./test:/app/public
+  ports:
+    - "8099:80"

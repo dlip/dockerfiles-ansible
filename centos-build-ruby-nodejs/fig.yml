@@ -1,0 +1,4 @@
+nodejs:
+  image: dlip/centos-build-ruby-nodejs
+  volumes:
+    - .:/share

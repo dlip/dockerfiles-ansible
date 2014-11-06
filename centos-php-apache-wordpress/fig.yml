@@ -1,0 +1,6 @@
+wordpress:
+  image: dlip/centos-php-apache-wordpress
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+  ports:
+    - "8099:80"
