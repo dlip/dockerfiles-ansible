@@ -52,3 +52,6 @@
 [submodule "centos-java-jenkins/playbooks/roles/jenkins"]
 	path = centos-java-jenkins/playbooks/roles/jenkins
 	url = https://github.com/dlip/ansible-role-jenkins.git
+[submodule "centos-php-apache-wordpress/playbooks/roles/wordpress"]
+	path = centos-php-apache-wordpress/playbooks/roles/wordpress
+	url = https://github.com/dlip/ansible-role-wordpress.git
