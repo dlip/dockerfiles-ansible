@@ -55,3 +55,6 @@
 [submodule "centos-php-apache-wordpress/playbooks/roles/wordpress"]
 	path = centos-php-apache-wordpress/playbooks/roles/wordpress
 	url = https://github.com/dlip/ansible-role-wordpress.git
+[submodule "centos-nfs/playbooks/roles/nfs"]
+	path = centos-nfs/playbooks/roles/nfs
+	url = https://github.com/dlip/ansible-role-nfs.git

@@ -1,0 +1,8 @@
+nfs:
+  image: dlip/centos-nfs
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - ./share:/share
+  ports:
+    - "2050:2049"
+  privileged: true
