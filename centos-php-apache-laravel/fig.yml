@@ -2,7 +2,6 @@ laravel:
   image: dlip/centos-php-apache-laravel
   volumes:
     - ./host_vars:/var/playbooks/host_vars
-    - ./test:/app/public
     - ./playbooks/roles/laravel:/var/playbooks/roles/laravel
   ports:
     - "8099:80"

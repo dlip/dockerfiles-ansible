@@ -58,3 +58,6 @@
 [submodule "centos-nfs/playbooks/roles/nfs"]
 	path = centos-nfs/playbooks/roles/nfs
 	url = https://github.com/dlip/ansible-role-nfs.git
+[submodule "centos-php-apache-laravel/playbooks/roles/laravel"]
+	path = centos-php-apache-laravel/playbooks/roles/laravel
+	url = https://github.com/dlip/ansible-role-laravel.git
