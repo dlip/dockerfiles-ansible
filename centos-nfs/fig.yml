@@ -2,6 +2,7 @@ nfs:
   image: dlip/centos-nfs
   volumes:
     - ./host_vars:/var/playbooks/host_vars
+    - ./playbooks/roles/nfs:/var/playbooks/roles/nfs
     - ./share:/share
   ports:
     - "2050:2049"

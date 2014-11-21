@@ -9,4 +9,4 @@ RUN container-install.sh
 
 RUN echo "tail -f /var/log/btmp" >> /usr/bin/container-services.sh
 
-EXPOSE 2049
+EXPOSE 111/udp 2049/tcp

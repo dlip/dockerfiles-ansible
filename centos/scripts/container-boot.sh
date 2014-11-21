@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 bash /usr/bin/container-config.sh
 

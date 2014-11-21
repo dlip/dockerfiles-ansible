@@ -1,5 +1,7 @@
 ---
-nfs_exports: { "/share *(rw,sync,fsid=0,crossmnt,no_subtree_check)" }
+nfs_exports:
+  - path: /share
+    permissions: '*(rw,sync,fsid=0,crossmnt,no_subtree_check)'
 nfs_options:
   MOUNTD_NFS_V3: "yes"
   RPCNFSDARGS: "-N 4"
