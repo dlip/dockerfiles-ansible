@@ -58,6 +58,6 @@
 [submodule "centos-php-apache-laravel/playbooks/roles/laravel"]
 	path = centos-php-apache-laravel/playbooks/roles/laravel
 	url = https://github.com/dlip/ansible-role-laravel.git
-[submodule "centos-nginx/roles/dlip.nginx"]
-	path = centos-nginx/roles/dlip.nginx
+[submodule "centos-nginx/playbooks/roles/nginx"]
+	path = centos-nginx/playbooks/roles/nginx
 	url = https://github.com/dlip/ansible-role-nginx.git
