@@ -2,6 +2,8 @@ apache:
   image: dlip/centos-php-apache
   volumes:
     - ./host_vars:/var/playbooks/host_vars
+    - ./playbooks/roles/apache:/var/playbooks/roles/apache
     - ./test:/app/public
   ports:
     - "8099:80"
+    - "4499:443"

@@ -16,4 +16,16 @@ php_ini:
    section: "PHP"
    value: "On"
 apache_vhosts:
-  - {servername: "local.dev", documentroot: "/app/public"}
+  - servername: "local.dev"
+    documentroot: "/app/public"
+    ssl: true
+    ssl_redirect: false
+    extra_parameters:
+     - 'SSLCertificateFile /app/public/ca.crt'
+     - 'SSLCertificateKeyFile /app/public/ca.key'
+     # testing for local signed client certificates
+     - 'SSLCACertificateFile /app/public/ca.crt'
+     - 'SSLCADNRequestFile /app/public/ca.crt'
+     - 'SSLVerifyClient optional'
+     - 'SSLVerifyDepth 1'
+     - 'SSLOptions +StdEnvVars'
