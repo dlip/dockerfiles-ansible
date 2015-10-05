@@ -1,0 +1,7 @@
+logstashforwarder:
+  image: dlip/centos-logstashforwarder
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - .:/share
+  ports:
+    - "5499:5432"
